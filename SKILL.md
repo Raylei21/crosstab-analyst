@@ -276,7 +276,9 @@ Quick Analysis 和 Deep Research Analysis 都必须执行全表扫描，只是�
 
 从不同细分用户群体中识别有价值的差异。
 
-采用以下三种分析方式：
+⚠️ 强制输出章节：本节是分析报告的核心组成部分，必须完整、具体地呈现在最终结果中，不得省略差异数据、直接跳入消费者洞察或业务结论。无论 Quick Analysis 还是 Deep Research Analysis，都必须输出下面 A、B、C 三个子部分；Quick Analysis 可精简每部分的罗列数量，但不能省略任何一个子部分。
+
+采用以下三种分析方式（三者都必须输出）：
 
 ## A. Segment vs Overall
 
@@ -655,7 +657,10 @@ Base N ≥ 30 并不自动意味着结果具有统计显著性。
 1. Data Overview：数据结构与样本量概览。
 2. Data Quality Check：数据质量和样本量风险。
 3. Overall Findings：整体用户的主要发现。
-4. Key Segment Differences：最值得关注的细分用户差异。
+4. Key Segment Differences（细分用户差异分析，强制，不得省略）：必须包含 Step 5 的 A/B/C 三个子部分——
+   - A. Segment vs Overall：明显高于 / 低于 Overall 的指标、与 Overall 接近的普遍需求、有区分度的差异化需求（用 pp 表达）。
+   - B. Within-segment Comparison：同一细分维度内部的横向比较与梯度。
+   - C. Differentiating Needs：Common / Differentiating / Unique / Low-Priority 四类需求归类。
 5. Top Consumer Insights：核心消费者洞察。
 6. Counter-evidence Check：关键发现的反面证据和适用范围。
 7. Business Implications：业务启发。
@@ -669,7 +674,7 @@ Base N ≥ 30 并不自动意味着结果具有统计显著性。
 2. Full Table Scan & Analysis Priorities。
 3. Data Validation & Sample Size Warnings。
 4. Overall Analysis。
-5. Segment Comparison。
+5. Segment Comparison（强制，不得省略）：Step 5 的 A（Segment vs Overall）、B（Within-segment Comparison）、C（Differentiating Needs）三个子部分，逐项完整呈现。
 6. Segment Profiling。
 7. Cross-question Analysis。
 8. Counter-evidence & Hypothesis Validation。
@@ -692,6 +697,20 @@ Base N ≥ 30 并不自动意味着结果具有统计显著性。
 
 不要为了凑齐格式而重复无意义的内容。对于简单的数据发现，可以适当简化。
 
+## Mandatory Output Checklist（交付前必查清单）
+
+每次交付分析结果前，逐项自检；缺失项必须补上，不得跳过。以下为硬性要求：
+
+1. ✅ **Segment Comparison 是否完整输出？** 是否包含 A（Segment vs Overall）、B（Within-segment Comparison）、C（Differentiating Needs）三个子部分？是否在给出消费者洞察和业务结论**之前**先呈现了这些差异数据？
+2. ✅ 差异是否用百分点（pp）表达（如 +15pp），而非"增长 15%"？
+3. ✅ 每个关键百分比是否标注了对应的 Base N 和 Count？
+4. ✅ Base N < 30 是否用 ⚠️ Small Sample 标注？Base N < 10 是否用 ⚠️ Very Small Sample 标注？
+5. ✅ 是否先输出了 Overall Analysis（整体用户分析），再进入细分差异？
+6. ✅ 对核心洞察是否做了 Counter-evidence Check（反面证据检查）？
+7. ✅ 是否区分了 Data Finding / Consumer Insight / Business Implication 三个层次？
+
+特别强调：若用户明确要求看到细分差异，A/B/C 三部分必须逐项呈现，不得用"详见洞察部分"或一句话概括代替。
+
 ---
 
 # 15. Analysis Principles（核心分析原则）
@@ -700,7 +719,7 @@ Base N ≥ 30 并不自动意味着结果具有统计显著性。
 
 1. Data First：所有结论必须以实际数据为基础。
 2. Evidence-based：关键洞察必须提供对应的数据证据。
-3. Segment-oriented：重点识别不同用户群体之间的差异，而不是只罗列整体数据。
+3. Segment-oriented：细分差异分析（Step 5 的 A/B/C 三部分）是强制输出内容，必须完整呈现，不得省略差异数据、直接跳入消费者洞察或业务结论。
 4. Cross-question Thinking：善于将不同题目的信息联系起来。
 5. Scan First, Analyze Second：先扫描全表、建立数据地图，再确定分析重点。
 6. Prioritization：优先呈现重要、有区分度、有业务价值的发现，而不是机械罗列全部数据。
